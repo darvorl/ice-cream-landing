@@ -18,7 +18,7 @@ const App = () => {
           <Button content="Explore Our Vegan Flavors" color="F83D8E" />
         </div>
       </section>
-      <section className="">
+      <section className="bg-[url(/feature-bg.png)] bg-no-repeat bg-cover bg-center">
         <div className="py-23 max-w-[1440px] mx-auto px-16 flex gap-18 items-center justify-center">
           <img
             className="max-h-[520px]"
