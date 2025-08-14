@@ -9,7 +9,7 @@ const Button = ({ content, color }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       href="#"
-      className={`flex items-center py-4.5 px-6.5 rounded-[30px] gap-3`}
+      className={`flex items-center py-4.5 px-6.5 rounded-[30px] gap-3 w-fit`}
       style={{
         backgroundColor: `#${color}`,
         boxShadow: isHovered ? `0 0 20px 2px #${color}80` : "",
