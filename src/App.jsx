@@ -163,6 +163,18 @@ chunks of brownie."
           </Swiper>
         </div>
       </section>
+      <section className="bg-[url(/gelato-bg.jpg)] bg-no-repeat bg-cover py-[100px] bg-center max-h-[720px]">
+        <div className="max-w-[1440px] mx-auto px-16">
+          <h2 className="text-white font-[Berkshire_Swash] mb-8 text-8xl max-w-[680px] leading-[116px]">
+            Gelato Lovers' Special!
+          </h2>
+          <p className="text-white text-3xl mb-10 font-[Archivo]">
+            Buy Any Two Gelatos Pints, Get One{" "}
+            <span className="text-[#FFD800]">Free!</span>
+          </p>
+          <Button content="Claim Offer" color="F83D8E" />
+        </div>
+      </section>
     </main>
   );
 };
