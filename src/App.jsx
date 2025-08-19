@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import GelatoCard from "./components/GelatoCard";
 import Button from "./components/Button";
 import Card from "./components/Card";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -173,6 +174,89 @@ chunks of brownie."
             <span className="text-[#FFD800]">Free!</span>
           </p>
           <Button content="Claim Offer" color="F83D8E" />
+        </div>
+      </section>
+      <section className="relative flex flex-col gap-[50px] items-center py-[136px] bg-linear-[-30deg] from-[#EFD7EF] via-[#F5F9FC] via-[#F8EAE1] to-[#EAF8F9]">
+        <div className="flex gap-4.5 flex-col items-center">
+          <h2 className="text-[#0F0200] text-6xl font-[Berkshire_Swash]">
+            Most Popular <span className="text-[#F83D8E]">Gelato</span> Flavors
+          </h2>
+          <p className="font-[Archivo] text-[#646464] text-xl">
+            Discover the gelato flavors that our customers love the most.
+          </p>
+        </div>
+        <div className="w-full max-w-[1140px]">
+          <Swiper
+            modules={[Pagination]}
+            spaceBetween={30}
+            slidesPerView={4}
+            pagination={{ clickable: true }}
+          >
+            <SwiperSlide>
+              <GelatoCard
+                productName="Straberry Balsamic Gelato"
+                productPrice={6.49}
+                rating={4.9}
+                img="gelato-1.png"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GelatoCard
+                productName="Chocolate Hazelnut Gelato"
+                productPrice={6.79}
+                rating={4.2}
+                img="gelato-2.png"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GelatoCard
+                productName="Tiramisu Gelato"
+                productPrice={7.49}
+                rating={4.9}
+                img="gelato-3.png"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GelatoCard
+                productName="Classic Pistachio Gelato"
+                productPrice={6.29}
+                rating={4.8}
+                img="gelato-4.png"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GelatoCard
+                productName="Straberry Balsamic Gelato"
+                productPrice={6.49}
+                rating={4.9}
+                img="gelato-1.png"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GelatoCard
+                productName="Chocolate Hazelnut Gelato"
+                productPrice={6.79}
+                rating={4.2}
+                img="gelato-2.png"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GelatoCard
+                productName="Tiramisu Gelato"
+                productPrice={7.49}
+                rating={4.9}
+                img="gelato-3.png"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <GelatoCard
+                productName="Classic Pistachio Gelato"
+                productPrice={6.29}
+                rating={4.8}
+                img="gelato-4.png"
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </section>
     </main>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BiRightArrowAlt } from "react-icons/bi";
 
-const Button = ({ content, color }) => {
+const Button = ({ content, color, paddingBlock = 18 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -9,8 +9,9 @@ const Button = ({ content, color }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       href="#"
-      className={`flex items-center py-4.5 px-6.5 rounded-[30px] gap-3 w-fit`}
+      className={`flex items-center px-6.5 rounded-[30px] gap-3 w-fit`}
       style={{
+        paddingBlock: `${paddingBlock}px`,
         backgroundColor: `#${color}`,
         boxShadow: isHovered ? `0 0 20px 2px #${color}80` : "",
         transition: "0.3s ease",
