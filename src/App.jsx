@@ -26,7 +26,7 @@ const App = () => {
           <Button content="Explore Our Vegan Flavors" color="F83D8E" />
         </div>
       </section>
-      <section className="bg-[url(/feature-bg.png)] bg-no-repeat bg-cover bg-center max-w-[1440px] mx-auto">
+      <section className="bg-[url(/feature-bg.png)] bg-no-repeat bg-cover bg-center">
         <div className="py-23 max-w-[1440px] mx-auto px-16 flex gap-18 items-center justify-center">
           <img
             className="max-h-[520px]"
@@ -257,6 +257,52 @@ chunks of brownie."
               />
             </SwiperSlide>
           </Swiper>
+        </div>
+      </section>
+      <section className="bg-[url(/cta-bg.png)] bg-no-repeat bg-auto  bg-center">
+        <div className="max-w-[1440px] mx-auto flex flex-col gap-14 px-16 py-36   items-center">
+          <div className="flex gap-7 flex-col items-center ">
+            <h2 className="text-[#0F0200] text-6xl font-[Berkshire_Swash] leading-16 text-center max-w-[750px]">
+              Sign up For{" "}
+              <span className="text-[#F83D8E]">Exclusive Deals</span> and
+              Updates
+            </h2>
+            <p className="font-[Archivo] text-[#646464] text-xl">
+              Get 10% off your next order and stay updated with our latest
+              offers.
+            </p>
+          </div>
+          <form action="#" className="flex items-center flex-col gap-9">
+            <div className="flex shadow-lg rounded-[30px]">
+              <input
+                className="w-[520px] px-5 outline-none"
+                type="email"
+                placeholder="Enter Your Email Address"
+              />
+              <Button content="Subscribe" color="F83D8E" />
+            </div>
+
+            <label
+              htmlFor="privacy"
+              className="text-[#646464] font-[Archivo] flex text-sm gap-2.5 items-center"
+            >
+              <input
+                type="checkbox"
+                name="privacy"
+                className="w-5 h-5 rounded-full bg-[#E8E8E8] appearance-none checked:bg-[#F83D8E] cursor-pointer"
+                id="privacy"
+              />
+              <p>
+                I agree to the{" "}
+                <a
+                  href="#"
+                  className="text-[#F83D8E] underline font-[Archivo] text-sm"
+                >
+                  Privacy Policy
+                </a>
+              </p>
+            </label>
+          </form>
         </div>
       </section>
     </main>
