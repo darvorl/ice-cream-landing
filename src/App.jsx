@@ -18,27 +18,27 @@ const App = () => {
       <Header />
 
       <main>
-        <section className="bg-[url(/hero-bg.jpg)] bg-no-repeat bg-cover py-[100px] bg-center max-h-[846px]">
-          <div className="max-w-[1440px] mx-auto px-16">
-            <h1 className="font-[Berkshire_Swash] text-8xl text-white mb-6 leading-[108px] max-w-[690px]">
+        <section className="bg-[url(/hero-bg.jpg)] bg-no-repeat bg-cover py-[100px] bg-center max-h-[846px] max-lg:bg-[#61298c] max-lg:bg-none max-sm:py-20">
+          <div className="max-w-[1440px] mx-auto px-16 max-xl:px-14 max-sm:px-6 max-md:px-10 max-lg:px-12">
+            <h1 className="font-[Berkshire_Swash] text-8xl text-white mb-6 leading-[108px] max-w-[690px] max-xl:text-7xl max-sm:text-5xl max-sm:leading-16 ">
               Vegan Ice Cream Delights
             </h1>
-            <p className="font-[Archivo] text-xl text-white mb-11 max-w-[640px]">
+            <p className="font-[Archivo] text-xl text-white mb-11 max-w-[640px] max-sm:text-lg">
               Discover a world of tasty vegan ice cream flavors and desserts
               that everyone can enjoy.
             </p>
             <Button content="Explore Our Vegan Flavors" color="F83D8E" />
           </div>
         </section>
-        <section className="bg-[url(/feature-bg.png)] bg-no-repeat bg-cover bg-center">
-          <div className="py-23 max-w-[1440px] mx-auto px-16 flex gap-18 items-center justify-center">
+        <section className="bg-[url(/feature-bg.png)] bg-no-repeat bg-cover bg-center max-xl:bg-white max-xl:bg-none">
+          <div className="py-23 max-w-[1440px] mx-auto px-16 flex gap-18 items-center justify-center max-xl:px-14 max-sm:px-6 max-md:px-10 max-lg:px-12 max-sm:py-20 max-xl:flex-col-reverse">
             <img
               className="max-h-[520px]"
               src="./feature-image.png"
               alt="ice cream"
             />
-            <div className="">
-              <h2 className="mb-9 text-[#0F0200] font-[Berkshire_Swash] text-6xl leading-16 max-w-[384px]">
+            <div className="flex flex-col max-xl:items-center max-xl:text-center max-sm:[&>p]:text-lg">
+              <h2 className="mb-9 text-[#0F0200] font-[Berkshire_Swash] text-6xl leading-16 max-w-[384px] max-xl:max-w-full max-sm:text-5xl max-sm:leading-16">
                 Experience the Art of{" "}
                 <span className="text-[#F83D8E]">Gelato</span>
               </h2>
@@ -53,17 +53,17 @@ const App = () => {
             </div>
           </div>
         </section>
-        <section className="relative flex flex-col gap-[50px] items-center py-[136px] bg-linear-[-30deg] from-[#EFD7EF] via-[#F5F9FC] via-[#F8EAE1] to-[#EAF8F9]">
+        <section className="max-xl:px-14 max-sm:px-6 max-md:px-10 max-lg:px-12 relative flex flex-col gap-[50px] items-center py-[136px] max-xl:py-[100px] max-sm:py-20 bg-linear-[-30deg] from-[#EFD7EF] via-[#F5F9FC] via-[#F8EAE1] to-[#EAF8F9]">
           <img
             src="./classic-left.png"
-            className="absolute left-0 max-h-[300px]"
+            className="absolute left-0 max-h-[300px] max-xl:hidden"
           ></img>
           <img
             src="./classic-right.png"
-            className="absolute right-0 bottom-[90px] max-h-[400px]"
+            className="absolute right-0 bottom-[90px] max-h-[400px] max-xl:hidden"
           ></img>
-          <div className="flex gap-4.5 flex-col items-center">
-            <h2 className="text-[#0F0200] text-6xl font-[Berkshire_Swash]">
+          <div className="flex gap-4.5 flex-col items-center max-xl:items-center max-xl:text-center max-sm:[&>p]:text-lg">
+            <h2 className="text-[#0F0200] text-6xl font-[Berkshire_Swash] max-sm:text-5xl max-sm:leading-16">
               Our <span className="text-[#F83D8E]">Classic</span> Favorites
             </h2>
             <p className="font-[Archivo] text-[#646464] text-xl">
@@ -74,7 +74,20 @@ const App = () => {
             <Swiper
               modules={[Pagination]}
               spaceBetween={30}
-              slidesPerView={4}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                640: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+                1280: {
+                  slidesPerView: 4,
+                },
+              }}
               pagination={{ clickable: true }}
             >
               <SwiperSlide>

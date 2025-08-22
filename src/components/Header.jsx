@@ -1,16 +1,15 @@
 import React from "react";
 import logo from "../assets/icytales-logo.png";
-import { BiSearch } from "react-icons/bi";
-import { BiShoppingBag } from "react-icons/bi";
+import { BiMenu, BiShoppingBag, BiSearch } from "react-icons/bi";
 import Button from "./Button";
 
 const Header = () => {
   return (
-    <header className="max-w-[1440px] mx-auto px-16 py-6 flex items-center justify-between">
+    <header className="max-w-[1440px] mx-auto px-16 py-6 flex items-center justify-between max-xl:px-14 max-sm:px-6 max-md:px-10 max-lg:px-12">
       <a href="./">
         <img src={logo} alt="IcyTales logo" />
       </a>
-      <div className="flex items-center">
+      <div className="flex items-center max-xl:hidden">
         <ul className="flex mr-19 font-[Archivo] text-[#0F0200] gap-10">
           <li>
             <a className="p-4 hover:text-[#F83D8E]" href="#">
@@ -49,6 +48,7 @@ const Header = () => {
 
         <Button content="Contact Us" color="F83D8E" />
       </div>
+      <BiMenu className="text-[#0F0200] text-4xl hidden max-xl:block cursor-pointer" />
     </header>
   );
 };

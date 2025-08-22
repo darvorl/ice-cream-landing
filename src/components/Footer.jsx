@@ -98,7 +98,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="py-4.5 flex mt-22 justify-center border-t-2 max-w-[calc(1440px-260px)] mx-auto border-[hsla(0,0%,100%,0.15)]">
+        <div className="py-4.5 flex mt-22 justify-center border-t-2 max-w-[calc(1440px-460px)] mx-auto border-[hsla(0,0%,100%,0.15)]">
           <p className="text-[#CFB6E2] text-xs font-[Archivo]">
             Copyright © 2024 BlackRise Themes Inc All rights reserved.
           </p>
@@ -113,10 +113,10 @@ const Footer = () => {
             behavior: "smooth",
           });
         }}
-        className="bg-[#F83D8E] h-16 w-16 absolute cursor-pointer hover:scale-105 duration-300 ease-in transition-transform right-16 bottom-11 rounded-lg flex items-center justify-center"
+        className="bg-[#F83D8E] h-16 w-16 absolute cursor-pointer hover:scale-105 duration-300 ease-in transition-transform right-16 bottom-11 rounded-lg flex items-center justify-center max-sm:bottom-5 max-sm:right-5 max-sm:h-14 max-sm:w-14"
         aria-label="Volver al inicio"
       >
-        <BiUpArrowAlt className="text-white text-2xl" />
+        <BiUpArrowAlt className="text-white text-2xl max-sm:text-xl" />
       </button>
     </footer>
   );
