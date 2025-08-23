@@ -10,7 +10,7 @@ const Button = ({ content, color, paddingBlock = 18, cta = false }) => {
       onMouseLeave={() => setIsHovered(false)}
       href="#"
       className={`flex items-center px-6.5 justify-center rounded-[30px] gap-3 w-fit ${
-        cta ? "w-full" : ""
+        cta ? "max-lg:w-full" : ""
       }`}
       style={{
         paddingBlock: `${paddingBlock}px`,
