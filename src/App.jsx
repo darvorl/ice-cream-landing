@@ -181,21 +181,21 @@ chunks of brownie."
             </Swiper>
           </div>
         </section>
-        <section className="bg-[url(/gelato-bg.jpg)] bg-no-repeat bg-cover py-[100px] bg-center max-h-[720px]">
-          <div className="max-w-[1440px] mx-auto px-16">
-            <h2 className="text-white font-[Berkshire_Swash] mb-8 text-8xl max-w-[680px] leading-[116px]">
+        <section className="bg-[url(/gelato-bg.jpg)] bg-no-repeat bg-cover py-[100px] bg-center max-h-[720px] max-sm:py-20 max-lg:bg-[#61298c] max-lg:bg-none">
+          <div className="max-w-[1440px] mx-auto px-16 max-xl:px-14 max-sm:px-6 max-md:px-10 max-lg:px-12">
+            <h2 className="text-white font-[Berkshire_Swash] mb-8 text-8xl max-w-[680px] leading-[116px] max-xl:text-7xl max-sm:text-5xl max-sm:leading-16">
               Gelato Lovers' Special!
             </h2>
-            <p className="text-white text-3xl mb-10 font-[Archivo]">
+            <p className="text-white text-3xl mb-10 font-[Archivo] max-xl:text-2xl max-sm:text-xl max-sm:max-w-[300px]">
               Buy Any Two Gelatos Pints, Get One{" "}
               <span className="text-[#FFD800]">Free!</span>
             </p>
             <Button content="Claim Offer" color="F83D8E" />
           </div>
         </section>
-        <section className="relative flex flex-col gap-[50px] items-center py-[136px] bg-linear-[-30deg] from-[#EFD7EF] via-[#F5F9FC] via-[#F8EAE1] to-[#EAF8F9]">
-          <div className="flex gap-4.5 flex-col items-center">
-            <h2 className="text-[#0F0200] text-6xl font-[Berkshire_Swash]">
+        <section className="max-xl:px-14 max-sm:px-6 max-md:px-10 max-lg:px-12 relative flex flex-col gap-[50px] items-center py-[136px] bg-linear-[-30deg] from-[#EFD7EF] via-[#F5F9FC] via-[#F8EAE1] to-[#EAF8F9] max-xl:py-[100px] max-sm:py-20">
+          <div className="flex gap-4.5 flex-col items-center max-xl:text-center max-sm:[&>p]:text-lg">
+            <h2 className="text-[#0F0200] text-6xl font-[Berkshire_Swash] max-sm:text-5xl max-sm:leading-16">
               Most Popular <span className="text-[#F83D8E]">Gelato</span>{" "}
               Flavors
             </h2>
@@ -207,7 +207,20 @@ chunks of brownie."
             <Swiper
               modules={[Pagination]}
               spaceBetween={30}
-              slidesPerView={4}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                640: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+                1280: {
+                  slidesPerView: 4,
+                },
+              }}
               pagination={{ clickable: true }}
             >
               <SwiperSlide>
@@ -278,9 +291,9 @@ chunks of brownie."
           </div>
         </section>
         <section className="bg-[url(/cta-bg.png)] bg-no-repeat bg-auto  bg-center">
-          <div className="max-w-[1440px] mx-auto flex flex-col gap-14 px-16 py-36   items-center">
-            <div className="flex gap-7 flex-col items-center ">
-              <h2 className="text-[#0F0200] text-6xl font-[Berkshire_Swash] leading-16 text-center max-w-[750px]">
+          <div className="max-w-[1440px] mx-auto flex flex-col gap-14 px-16 py-36   items-center max-xl:px-14 max-sm:px-6 max-md:px-10 max-lg:px-12 max-xl:py-[100px] max-sm:py-20">
+            <div className="flex gap-7 flex-col items-center max-xl:text-center max-sm:[&>p]:text-lg">
+              <h2 className="text-[#0F0200] text-6xl font-[Berkshire_Swash] leading-16 text-center max-w-[750px] max-sm:text-5xl max-sm:leading-16">
                 Sign up For{" "}
                 <span className="text-[#F83D8E]">Exclusive Deals</span> and
                 Updates
@@ -291,13 +304,13 @@ chunks of brownie."
               </p>
             </div>
             <form action="#" className="flex items-center flex-col gap-9">
-              <div className="flex shadow-lg rounded-[30px]">
+              <div className="flex shadow-lg rounded-[30px] max-lg:flex-col max-lg:items-center max-lg:gap-6 max-lg:shadow-none">
                 <input
-                  className="w-[520px] px-5 outline-none"
+                  className="w-[520px] px-5 outline-none max-lg:rounded-[30px] max-lg:px-4 max-lg:py-4.5 max-lg:shadow-[0_0_15px_-3px_#00000040] max-sm:w-[calc(100vw-48px)]"
                   type="email"
                   placeholder="Enter Your Email Address"
                 />
-                <Button content="Subscribe" color="F83D8E" />
+                <Button content="Subscribe" color="F83D8E" cta={true} />
               </div>
 
               <label

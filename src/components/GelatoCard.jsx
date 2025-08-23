@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const GelatoCard = ({ productName, productPrice, rating, img }) => {
   return (
-    <div className="flex items-center h-full flex-col rounded-[20px] max-w-[255px]">
+    <div className="flex items-center h-full flex-col rounded-[20px] max-w-[255px] mx-auto">
       <a
         href="#"
         className="group mb-6.5 w-full bg-white flex items-end rounded-full justify-center min-h-[254px] max-h-[254px] overflow-hidden"
