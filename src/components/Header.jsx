@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/icytales-logo.png";
 import { BiMenu, BiShoppingBag, BiSearch } from "react-icons/bi";
 import Button from "./Button";
 
 const Header = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleMobile = () => {
+    setIsMobile(!isMobile);
+  };
+
   return (
     <header className="max-w-[1440px] mx-auto px-16 py-6 flex items-center justify-between max-xl:px-14 max-sm:px-6 max-md:px-10 max-lg:px-12">
       <a href="./">
@@ -48,7 +54,13 @@ const Header = () => {
 
         <Button content="Contact Us" color="F83D8E" />
       </div>
-      <BiMenu className="text-[#0F0200] text-4xl hidden max-xl:block cursor-pointer" />
+      <BiMenu
+        className="text-[#0F0200] text-4xl hidden max-xl:block cursor-pointer"
+        onClick={handleMobile}
+      />
+      {isMobile && (
+        <div className="bg-white shadow-[0_0_100px_#00000070] w-[80vw] absolute h-screen right-0 top-0 max-sm:w-screen"></div>
+      )}
     </header>
   );
 };
