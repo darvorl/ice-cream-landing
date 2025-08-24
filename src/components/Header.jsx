@@ -174,7 +174,6 @@ const Header = () => {
                   className="flex items-center gap-2 text-[#0F0200] hover:text-[#F83D8E] transition-colors duration-200"
                 >
                   <BiSearch className="text-2xl" />
-                  <span className="font-[Archivo]">Buscar</span>
                 </button>
                 <button
                   aria-label="Carrito de compras"
@@ -184,7 +183,6 @@ const Header = () => {
                     <div className="absolute right-[-4px] bottom-[-4px] before:bg-[#683292] before:w-3.5 before:h-3.5 before:rounded-full before:content-['0'] before:text-[10px] before:text-white before:items-center before:justify-center before:flex before:right-0 before:bottom-0 before:font-[Archivo]"></div>
                     <BiShoppingBag className="text-2xl" />
                   </div>
-                  <span className="font-[Archivo]">Carrito</span>
                 </button>
               </div>
 
