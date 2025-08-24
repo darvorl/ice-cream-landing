@@ -1,12 +1,20 @@
-# React + Vite
+# IcyTales 🍦
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Tecnologías Utilizadas
 
-Currently, two official plugins are available:
+<div>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png" alt="React Icon" width="60" style="margin: 0 7.5px"/>
+  &nbsp;
+  <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg" alt="Tailwind Icon" width="60" style="margin: 0 7.5px"/>
+  &nbsp;
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript Icon" width="60" style="margin: 0 7.5px"/>
+  &nbsp;
+  <img src="https://vitejs.dev/logo.svg" alt="Vite Icon" width="60" style="margin: 0 7.5px"/>
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎨 Diseño
 
-## Expanding the ESLint configuration
+- El diseño de esta aplicación **no fue creado por mí**, sino que fue tomado de un prototipo disponible en **Figma**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🔗 Link del Diseño en Figma
+👉 [Ver diseño en Figma](https://www.figma.com/community/file/1421382750050113203/70-icecream-website-figma-template)
